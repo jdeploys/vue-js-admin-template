@@ -1,23 +1,47 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import { UrlDef, UrlName } from "@/router/url";
+import { authModule } from "@/store";
+import AuthLayout from "@/layouts/Auth.vue";
+import DashboardPage from "@/pages/dashboard/DashboardPage.vue";
+import SignInPage from "@/pages/auth/SignInPage.vue";
+import BaseLayout from "@/layouts/Base.vue";
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: "/",
-    name: "Home",
-    component: Home
+    path: UrlDef.Root,
+    redirect: () => {
+      if (authModule.isSignIn) {
+        return UrlDef.Dashboard;
+      }
+      return UrlDef.AuthSignIn;
+    },
+    component: BaseLayout,
+    children: [
+      {
+        path: UrlDef.Dashboard,
+        name: UrlName.Dashboard,
+        component: DashboardPage
+      }
+    ]
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: UrlDef.Auth,
+    component: AuthLayout,
+    children: [
+      {
+        path: UrlDef.AuthSignIn,
+        name: UrlName.AuthSignIn,
+        component: SignInPage
+      }
+    ]
+  },
+  // 잘못된 주소 방지
+  {
+    path: "*",
+    redirect: UrlDef.Root
   }
 ];
 
