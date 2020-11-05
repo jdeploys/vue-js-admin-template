@@ -3,9 +3,9 @@ import VueRouter, { RouteConfig } from 'vue-router';
 import { UrlDef, UrlName } from '@/router/url';
 import { authModule } from '@/store';
 import AuthLayout from '@/layouts/Auth.vue';
-import DashboardPage from '@/pages/dashboard/DashboardPage.vue';
 import SignInPage from '@/pages/auth/SignInPage.vue';
 import BaseLayout from '@/layouts/Base.vue';
+import { menuItems } from '@/router/menu';
 
 Vue.use(VueRouter);
 
@@ -19,13 +19,7 @@ const routes: Array<RouteConfig> = [
       return UrlDef.AuthSignIn;
     },
     component: BaseLayout,
-    children: [
-      {
-        path: UrlDef.Dashboard,
-        name: UrlName.Dashboard,
-        component: DashboardPage
-      }
-    ]
+    children: menuItems
   },
   {
     path: UrlDef.Auth,

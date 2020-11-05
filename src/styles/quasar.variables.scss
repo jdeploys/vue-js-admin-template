@@ -1,15 +1,70 @@
 // It's highly recommended to change the default colors
 // to match your app's branding.
+@import '~quasar/src/css/variables';
 
-$primary: #027be3;
+$primary: #0b6e99;
 $secondary: #26a69a;
-$accent: #9c27b0;
+$accent: #6940a5;
 
-$dark: #1d1d1d;
+$positive: #0f7b6c;
+$negative: #e03e3e;
+$info: #ad1a72;
+$warning: #dfab01;
 
-$positive: #21ba45;
-$negative: #c10015;
-$info: #31ccec;
-$warning: #f2c037;
+$text-grey: rgba(0, 0, 0, 0.54);
+// https://optemization.com/Notion-Colour-Guide-4ebdc09eafb94352adc045ec1eb7d6a8
+$dark: #37352f;
+$grey: #9b9a97;
+$brown: #64473a;
+$orange: #d9730d;
+$yellow: #dfab01;
+$green: #0f7b6c;
+$blue: #0b6e99;
+$purple: #6940a5;
+$pink: #ad1a72;
+$red: #e03e3e;
 
-@import '~quasar-variables-styl';
+$grey-12: #ebeced;
+$brown-12: #e9e5e3;
+$orange-12: #faebdd;
+$yellow-12: #fbf3db;
+$green-12: #ddedea;
+$blue-12: #ddebf1;
+$purple-12: #eae4f2;
+$pink-12: #f4dfeb;
+$red-12: #fbe4e4;
+// It's highly recommended to change the default colors
+// to match your app's branding.
+@import '~quasar/src/css/variables';
+
+$primary: #0b6e99;
+$secondary: #26a69a;
+$accent: #6940a5;
+
+$positive: #0f7b6c;
+$negative: #e03e3e;
+$info: #ad1a72;
+$warning: #dfab01;
+
+$text-grey: rgba(0, 0, 0, 0.54);
+// https://optemization.com/Notion-Colour-Guide-4ebdc09eafb94352adc045ec1eb7d6a8
+$dark: #37352f;
+$grey: #9b9a97;
+$brown: #64473a;
+$orange: #d9730d;
+$yellow: #dfab01;
+$green: #0f7b6c;
+$blue: #0b6e99;
+$purple: #6940a5;
+$pink: #ad1a72;
+$red: #e03e3e;
+
+$grey-12: #ebeced;
+$brown-12: #e9e5e3;
+$orange-12: #faebdd;
+$yellow-12: #fbf3db;
+$green-12: #ddedea;
+$blue-12: #ddebf1;
+$purple-12: #eae4f2;
+$pink-12: #f4dfeb;
+$red-12: #fbe4e4;
