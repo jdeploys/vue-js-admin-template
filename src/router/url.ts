@@ -1,13 +1,13 @@
 export enum UrlName {
-  Auth = "Auth",
-  AuthSignIn = "AuthSignIn",
-  Base = "Base",
-  Dashboard = "Dashboard"
+  Auth = 'Auth',
+  AuthSignIn = 'AuthSignIn',
+  Base = 'Base',
+  Dashboard = 'Dashboard'
 }
 
 export enum UrlDef {
-  Root = "/",
-  Auth = "/auth",
-  AuthSignIn = "/auth/signIn",
-  Dashboard = "/dashboard"
+  Root = '/',
+  Auth = '/auth',
+  AuthSignIn = '/auth/signIn',
+  Dashboard = '/dashboard'
 }

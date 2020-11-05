@@ -1,6 +1,6 @@
-import { Module, VuexModule, Mutation, Action } from "vuex-module-decorators";
+import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
 
-@Module({ name: "auth" })
+@Module({ name: 'auth' })
 export default class AuthModule extends VuexModule {
   // data
   private _isSignIn = false;
@@ -14,7 +14,7 @@ export default class AuthModule extends VuexModule {
   // action
   @Action
   public signIn() {
-    this.context.commit("updateIsSignIn", true);
+    this.context.commit('updateIsSignIn', true);
     return new Promise(resolve => {
       setTimeout(resolve, 1000);
     });

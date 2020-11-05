@@ -1,6 +1,6 @@
-import Vue from "vue";
-import Component from "vue-class-component";
-import Quasar from "quasar";
+import Vue from 'vue';
+import Component from 'vue-class-component';
+import Quasar from 'quasar';
 
 @Component
 export default class ValidationMixins extends Vue {
@@ -20,7 +20,7 @@ export default class ValidationMixins extends Vue {
 
   public $_validation_checkId(customErrorMessage?: string): Function {
     return (value: string) => {
-      if (value === "js") {
+      if (value === 'js') {
         return true;
       }
 
@@ -30,7 +30,7 @@ export default class ValidationMixins extends Vue {
 
   public $_validation_checkPw(customErrorMessage?: string): Function {
     return (value: string) => {
-      if (value === "admin") {
+      if (value === 'admin') {
         return true;
       }
 

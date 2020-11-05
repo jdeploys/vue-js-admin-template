@@ -1,7 +1,5 @@
 <template>
-  <q-page>
-    Template
-  </q-page>
+  <q-page> Template </q-page>
 </template>
 
 <script lang="ts">

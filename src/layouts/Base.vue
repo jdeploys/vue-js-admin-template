@@ -21,13 +21,13 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import Component from "vue-class-component";
-import { uiModule } from "@/store";
+import Vue from 'vue';
+import Component from 'vue-class-component';
+import { uiModule } from '@/store';
 
 @Component
 export default class BaseLayout extends Vue {
-  public lang = (this.$q.lang as any);
+  public lang = this.$q.lang as any;
 
   public onClickLeftDrawer() {
     uiModule.updateIsLayoutLeftDrawerOpen(!this.isShowLeftDrawer);

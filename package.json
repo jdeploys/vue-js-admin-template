@@ -66,7 +66,10 @@
       "ecmaVersion": 2020
     },
     "rules": {
-      "indent": ["error", 2],
+      "indent": [
+        "error",
+        2
+      ],
       "@typescript-eslint/ban-ts-ignore": "off",
       "@typescript-eslint/camelcase": "off",
       "@typescript-eslint/no-explicit-any": "off"
@@ -82,6 +85,9 @@
         }
       }
     ]
+  },
+  "prettier": {
+    "singleQuote": true
   },
   "browserslist": [
     "> 1%",

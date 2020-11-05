@@ -29,17 +29,17 @@
 </template>
 
 <script lang="ts">
-import Component, { mixins } from "vue-class-component";
-import { authModule } from "@/store";
-import ValidationMixins from "@/components/mixins/ValidationMixins";
-import { UrlName } from "@/router/url";
+import Component, { mixins } from 'vue-class-component';
+import { authModule } from '@/store';
+import ValidationMixins from '@/components/mixins/ValidationMixins';
+import { UrlName } from '@/router/url';
 
 @Component
 export default class SignInPage extends mixins(ValidationMixins) {
   public lang = (this.$q.lang as any).auth;
   public formData = {
-    id: "",
-    pw: ""
+    id: '',
+    pw: ''
   };
   public isLoading = false;
 

@@ -1,11 +1,11 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
-import { UrlDef, UrlName } from "@/router/url";
-import { authModule } from "@/store";
-import AuthLayout from "@/layouts/Auth.vue";
-import DashboardPage from "@/pages/dashboard/DashboardPage.vue";
-import SignInPage from "@/pages/auth/SignInPage.vue";
-import BaseLayout from "@/layouts/Base.vue";
+import Vue from 'vue';
+import VueRouter, { RouteConfig } from 'vue-router';
+import { UrlDef, UrlName } from '@/router/url';
+import { authModule } from '@/store';
+import AuthLayout from '@/layouts/Auth.vue';
+import DashboardPage from '@/pages/dashboard/DashboardPage.vue';
+import SignInPage from '@/pages/auth/SignInPage.vue';
+import BaseLayout from '@/layouts/Base.vue';
 
 Vue.use(VueRouter);
 
@@ -40,13 +40,13 @@ const routes: Array<RouteConfig> = [
   },
   // 잘못된 주소 방지
   {
-    path: "*",
+    path: '*',
     redirect: UrlDef.Root
   }
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 });

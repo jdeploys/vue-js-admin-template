@@ -1,8 +1,8 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import AuthModule from "@/store/auth";
-import UiModule from "@/store/ui";
-import { getModule } from "vuex-module-decorators";
+import Vue from 'vue';
+import Vuex from 'vuex';
+import AuthModule from '@/store/auth';
+import UiModule from '@/store/ui';
+import { getModule } from 'vuex-module-decorators';
 
 Vue.use(Vuex);
 
