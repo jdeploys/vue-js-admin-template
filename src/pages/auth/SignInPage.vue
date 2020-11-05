@@ -32,7 +32,7 @@
 import Component, { mixins } from 'vue-class-component';
 import { authModule } from '@/store';
 import ValidationMixins from '@/components/mixins/ValidationMixins';
-import { UrlName } from '@/router/url';
+import { UrlName } from '@/config/router/url';
 
 @Component
 export default class SignInPage extends mixins(ValidationMixins) {

@@ -17,7 +17,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
-import { menuItems } from '@/router/menu';
+import { menuItems } from '@/config/router/menu';
 import { RouteConfig } from 'vue-router';
 
 @Component
@@ -26,7 +26,10 @@ export default class RouterMenu extends Vue {
   public menuItems = menuItems;
 
   public renderMenuName(item: RouteConfig) {
-    return this.lang[item.name] || '';
+    if (!item.name) {
+      return '';
+    }
+    return this.lang[item.name];
   }
 
   public onMenuClick(item: RouteConfig) {

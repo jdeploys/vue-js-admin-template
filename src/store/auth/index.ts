@@ -1,6 +1,6 @@
 import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
-import router from '@/router';
-import { UrlName } from '@/router/url';
+import router from '@/config/router';
+import { UrlName } from '@/config/router/url';
 
 @Module({ name: 'auth' })
 export default class AuthModule extends VuexModule {

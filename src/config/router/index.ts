@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import { UrlDef, UrlName } from '@/router/url';
+import { UrlDef, UrlName } from '@/config/router/url';
 import { authModule } from '@/store';
 import AuthLayout from '@/layouts/Auth.vue';
 import SignInPage from '@/pages/auth/SignInPage.vue';
 import BaseLayout from '@/layouts/Base.vue';
-import { menuItems } from '@/router/menu';
+import { menuItems } from '@/config/router/menu';
 
 Vue.use(VueRouter);
 

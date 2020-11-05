@@ -1,6 +1,6 @@
 // @ts-ignore
 import quasarEn from 'quasar/lang/en-us';
-import { UrlName } from '@/router/url';
+import { UrlName } from '@/config/router/url';
 
 const enUs = {
   ...quasarEn,

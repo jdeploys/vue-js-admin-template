@@ -1,4 +1,4 @@
-import { UrlDef, UrlName } from '@/router/url';
+import { UrlDef, UrlName } from '@/config/router/url';
 import DashboardPage from '@/pages/dashboard/DashboardPage.vue';
 import { RouteConfig } from 'vue-router';
 
