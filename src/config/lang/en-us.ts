@@ -1,5 +1,6 @@
 // @ts-ignore
 import quasarEn from 'quasar/lang/en-us';
+import { UrlName } from '@/router/url';
 
 const enUs = {
   ...quasarEn,
@@ -14,6 +15,14 @@ const enUs = {
     required: 'Required field',
     enterValidId: 'Please enter "js"',
     enterValidPw: 'Please enter "admin"'
+  },
+  // navigation menu
+  menu: {
+    [UrlName.Dashboard]: 'Dashboard',
+    [UrlName.Setting]: 'Setting'
+  },
+  msg: {
+    signOutConfirm: 'Confirm sign out?'
   }
 };
 
